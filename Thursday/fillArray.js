@@ -10,7 +10,7 @@ const arr = N => {
 /**
  * Second Solution
  */
-// const arr = (n) => [...Array(n).keys()];
+// const arr = (n = 0) => [...Array(n).keys()];
 
 
 console.log(arr(), []);
