@@ -1,12 +1,10 @@
 function lastChair(N) {
   // TODO
-  let n = [];
-
-  for (let i = 1; i <= N; i++) {
-    n.push(i);
-  }
-
-  return n.filter((x) => x % 2 != 0);
+  return N <= 2 ? N : N - 1;
 }
 
-console.log(lastChair(10));
+console.log(lastChair(10), 9);
+
+// 0   1   2   3   4   5   6   7   8   9
+// 1 	2 	3 	4 	5 	6 	7 	8 	9 	10
+// 1 	7 	5 	8 	3 	9 	4 	6 	10  2
