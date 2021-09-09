@@ -1,7 +1,10 @@
-const descendingOrder = (n) => {
-  let arrN = n.toString();
-  return Number([...arrN].sort((a, b) => b - a).join(""));
-};
+// const descendingOrder = (n) => {
+//   let arrN = n.toString();
+//   return Number([...arrN].sort((a, b) => b - a).join(""));
+// };
+
+const descendingOrder = (n) =>
+  parseInt(String(n).split("").sort().reverse().join(""));
 
 console.log(descendingOrder(0), 0);
 console.log(descendingOrder(1), 1);
