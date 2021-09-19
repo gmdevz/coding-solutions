@@ -7,6 +7,7 @@ const maskify = (cc) => {
 
   // regex
   // return cc.replace(/.(?=....)/g, '#');
+  // return cc.replace(/.(?=.{4})/g, "#");
 };
 
 console.log(maskify("iy2"));
