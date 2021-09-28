@@ -6,6 +6,7 @@
 //   }
 // }
 
+// const checkAlive = (health) => (health <= 0 ? false : true);
 const checkAlive = (health) => health > 0;
 
 console.log(checkAlive(5), true);
