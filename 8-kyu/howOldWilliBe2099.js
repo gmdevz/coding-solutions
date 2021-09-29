@@ -1,14 +1,20 @@
 const calculateAge = (a, b) => {
   // enter your code here.
-  return a >= b
-    ? a - b === 0
-      ? "You were born this very year!"
-      : a - b > 1
-      ? `You will be born in ${a - b} years.`
-      : `You will be born in ${a - b} year.`
-    : b - a === 1
-    ? "You are 1 year old."
-    : `You are ${b - a} years old.`;
+  // return a >= b
+  //   ? a - b === 0
+  //     ? "You were born this very year!"
+  //     : a - b > 1
+  //     ? `You will be born in ${a - b} years.`
+  //     : `You will be born in ${a - b} year.`
+  //   : b - a === 1
+  //   ? "You are 1 year old."
+  //   : `You are ${b - a} years old.`;
+
+  return a > b
+    ? `You will be born in ${a - b} year${a - b === 1 ? "" : "s"}.`
+    : a < b
+    ? `You are ${b - a} year${b - a === 1 ? "" : "s"} old.`
+    : "You were born born this very year!";
 };
 console.log(calculateAge(2012, 2016), "You are 4 years old.");
 console.log(calculateAge(1989, 2016), "You are 27 years old.");
