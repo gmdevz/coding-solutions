@@ -1,10 +1,13 @@
-// const distinct = (a) => Array.from(a);
+// Solution 1
+// const distinct = (a) => {
+//   return arr.filter((value, index) => arr.indexOf(value) === index);
+// };
 
-// const distinct = (a) => [...a];
+// Solution 2
+// const distinct = (a) => [...new Set(a)];
 
-const distinct = (a) => {
-  return arr.filter((value, index) => arr.indexOf(value) === index);
-};
+// Solution 3
+const distinct = (a) => Array.from(new Set(a));
 
 console.log(distinct([1]), [1]);
 console.log(distinct([1, 2]), [1, 2]);
