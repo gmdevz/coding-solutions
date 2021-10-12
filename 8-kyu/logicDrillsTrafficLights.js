@@ -15,13 +15,20 @@
 //   }
 // }
 
-const updateLight = (current) => {
-  return current === "green"
-    ? "yellow"
-    : current === "yellow"
-    ? "red"
-    : "green";
-};
+// const updateLight = (current) => {
+//   return current === "green"
+//     ? "yellow"
+//     : current === "yellow"
+//     ? "red"
+//     : "green";
+// };
+
+const updateLight = (current) =>
+  ({
+    green: "yellow",
+    yellow: "red",
+    red: "green",
+  }[current]);
 
 console.log(updateLight("green"), "yellow");
 console.log(updateLight("yellow"), "red");
