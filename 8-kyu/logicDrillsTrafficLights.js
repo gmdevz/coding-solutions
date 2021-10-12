@@ -1,19 +1,27 @@
-function updateLight(current) {
-  //your code here!
-  switch (current) {
-    case "green":
-      // code block
-      return "yellow";
-      break;
-    case "yellow":
-      // code block
-      return "red";
-      break;
-    default:
-      // code block
-      return "green";
-  }
-}
+// function updateLight(current) {
+//   //your code here!
+//   switch (current) {
+//     case "green":
+//       // code block
+//       return "yellow";
+//       break;
+//     case "yellow":
+//       // code block
+//       return "red";
+//       break;
+//     default:
+//       // code block
+//       return "green";
+//   }
+// }
+
+const updateLight = (current) => {
+  return current === "green"
+    ? "yellow"
+    : current === "yellow"
+    ? "red"
+    : "green";
+};
 
 console.log(updateLight("green"), "yellow");
 console.log(updateLight("yellow"), "red");
