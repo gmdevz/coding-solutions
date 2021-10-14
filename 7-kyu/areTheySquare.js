@@ -2,7 +2,9 @@ const isSquare = (arr) => {
   // return arr > 0 && Math.sqrt(arr) % 1 === 0;
   return arr.length === 0
     ? undefined
-    : arr.every((num) => Math.sqrt(num).toString() <= num.toString().length);
+    : arr.every(
+        (num) => Math.sqrt(num).toString().length <= num.toString().length
+      );
 };
 
 console.log(isSquare([1, 4, 9, 16, 25, 36]), true);
