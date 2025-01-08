@@ -1,0 +1,38 @@
+# LeetCode Solutions
+
+This folder contains my solutions to LeetCode problems, organized by difficulty (easy, medium, hard). The solutions are written in various languages, including Python, Java, and JavaScript.
+
+## Folder Structure
+
+- `easy/` : Contains solutions to easy difficulty problems.
+- `medium/` : Contains solutions to medium difficulty problems.
+- `hard/` : Contains solutions to hard difficulty problems.
+
+Each folder may contain solutions in different programming languages.
+
+## Naming Convention
+
+- Problem files are named using the format `problem_name_language.extension` (e.g., `two_sum_python.py`, `longest_substring_java.java`).
+- The `extension` corresponds to the programming language used (e.g., `.py` for Python, `.js` for JavaScript, `.java` for Java).
+
+## How to Use
+
+1. **Clone the repository**:
+git clone https://github.com/your_username/coding-solutions.git
+
+2. **Navigate to the appropriate folder**:
+cd leetcode/easy
+
+3. **Add your own solutions**: If you're contributing, make sure to follow the naming convention and folder structure.
+
+4. **Submit a Pull Request**: After adding your solution, submit a pull request for review.
+
+## Contribution Guidelines
+
+- Fork the repository and create a new branch for your changes.
+- Make sure to follow the folder and naming conventions.
+- Test your solution before submitting a pull request.
+
+## License
+
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
